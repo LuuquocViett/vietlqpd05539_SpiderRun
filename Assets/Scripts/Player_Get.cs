@@ -49,9 +49,6 @@ public class Player_Get : MonoBehaviour
                 if (_SP != null) {
                     _SP.SoundPlay(2);
                 }
-                if (_fade != null) {
-                    _Fade.FadeOut();
-                }
             }
         }
     }

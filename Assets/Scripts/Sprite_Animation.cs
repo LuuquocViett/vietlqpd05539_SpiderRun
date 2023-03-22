@@ -44,7 +44,7 @@ public class Sprite_Animation : MonoBehaviour
         if (_now_run_ani_count >= Run_Image.Length) {
             _now_run_ani_count = 0;
         }
-        this.gameObject.GetComponent<Renderer>().material.mainTexture = Run_Image [_now_run_ani_count];
+        this.gameObject.GetComponent<Renderer>().material.mainTexture = Run_Image[_now_run_ani_count];
     }
 
     void JUMP_ANI_ing() {
@@ -53,7 +53,7 @@ public class Sprite_Animation : MonoBehaviour
             Run_Play();
             return;
         }
-        this.gameObject.GetComponent<Renderer>().material.mainTexture = Jump_Image [_now_jump_ani_count];
+        this.gameObject.GetComponent<Renderer>().material.mainTexture = Jump_Image[_now_jump_ani_count];
     }
 
     void D_JUMP_ANI_ing() {
@@ -62,7 +62,7 @@ public class Sprite_Animation : MonoBehaviour
             Run_Play();
             return;
         }
-        this.gameObject.GetComponent<Renderer>().material.mainTexture = D_Jump_Image [_now_d_jump_ani_count];
+        this.gameObject.GetComponent<Renderer>().material.mainTexture = D_Jump_Image[_now_d_jump_ani_count];
     }
 
     public void Run_Play() {

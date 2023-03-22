@@ -36,7 +36,7 @@ public class Player_Move : MonoBehaviour
     }
 
     void JUMP() {
-        status = PlayerMoveStatus.DoubleJump;
+        status = PlayerMoveStatus.Jump;
         GetComponent<Rigidbody>().AddForce (0, Jump_Power , 0);
         if (_SA !=  null) {
             _SA.Jump_Play();
@@ -47,8 +47,8 @@ public class Player_Move : MonoBehaviour
     }
 
     void DOUBLEJUMP() {
-        status = PlayerMoveStatus.Jump;
-        GetComponent<Rigidbody>().AddForce (0, Jump_Power * 1.5f , 0);
+        status = PlayerMoveStatus.DoubleJump;
+        GetComponent<Rigidbody>().AddForce (0, Jump_Power * 1.1f , 0);
         if (_SA !=  null) {
             _SA.D_Jump_Play();
         }
